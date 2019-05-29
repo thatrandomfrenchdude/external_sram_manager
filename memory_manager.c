@@ -53,7 +53,31 @@ void read_external_ram(uint32_t address, int bytes)
 //write data
 void write_external_ram(uint8_t* data, uint32_t address, int bytes)
 {
+    int i;
 
+    //prep data
+    uint8_t t1 = address >> 16;
+    uint8_t t2 = address >> 8;
+    uint8_t t3 = address;
+
+    // communication
+    SPI.beginTransaction(SPISettings(45000000, MSBFIRST, SPI_MODE1));
+    digitalWrite(CS, LOW);
+
+    // send read command and address to be read
+    SPI.transfer(WRITE_COMMAND);
+    SPI.transfer(t1);
+    SPI.transfer(t2);
+    SPI.transfer(t3);
+
+    //send dummy data to SPI to receive data back
+    for (i = 0; i < bytes; i++) {
+        SPI.transfer(data[i]);
+    }
+
+    //end communication
+    digitalWrite(CS, HIGH);
+    SPI.endTransaction();
 }
 
 //modify read mode - sequential (default), page, or byte
