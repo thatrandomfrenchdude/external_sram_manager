@@ -20,6 +20,9 @@ int init_sram(int num_modules)
 //read data
 void read_external_ram(uint8_t* data, uint32_t address, int bytes)
 {
+    SPI.beginTransaction(SPISettings(45000000, MSBFIRST, SPI_MODE1));
+    digitalWrite(CS, LOW);
+    SPI.transfer(READ_COMMAND);
 
 }
 

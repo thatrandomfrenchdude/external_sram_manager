@@ -5,6 +5,7 @@
  * the stdint library is included in the Arduino toolchain. */
 /* #include <stdint.h> */
 /* Comment this #inlcude if coding in traditional embedded C/C++ */
+#include "Arduino.h"
 #include <SPI.h>
 
 #define READ_COMMAND 0x03           //0000 0011
