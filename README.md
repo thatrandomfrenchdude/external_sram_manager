@@ -5,7 +5,7 @@ This code maps and handles memory on external SRAM chips. This memory manager is
 
 ## Hardware
 ### MCU
-The functions are written for use with a Teensy board being programmed using Platformio or Teensyduino. The functions can be modified for use with traditional embedded C/C++ by modifying the SPI function calls. Current pins are mapped to a Teensy 3.2.
+The functions are written for use with a Teensy board being programmed using Platformio or Teensyduino. The functions can be modified for use with traditional embedded C/C++ by modifying the SPI function calls. Current code assumes pins are mapped to a Teensy 3.2.
 
 ### SRAM Modules
 This code is specifically written for the following chips:
