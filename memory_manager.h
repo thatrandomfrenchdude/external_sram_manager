@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 #define READ_COMMAND 0x03           //0000 0011
-#define WRITE_COMMAND 0x02 			//0000 0010
+#define WRITE_COMMAND 0x02          //0000 0010
 
 #define READ_MODE_DEFAULT 0x05 		//0000 0101
 #define READ_MODE_PAGE 0x06 		//0000 0110
