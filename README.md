@@ -3,8 +3,8 @@ This code maps and handles memory on external SRAM chips. This memory manager is
 
 ## Hardware
 This code is specifically written for the following chips:
-  -IS62/65WVS2568GALL
-  -IS62/65WVS2568GBLL 
+  - IS62/65WVS2568GALL
+  - IS62/65WVS2568GBLL 
 
 It should support other ISSI SPI-based ram as well as other SPI-based external SRAM chips provided that they operate in a similar manner. If this code does not work for a chip, it is possible to make it work by modifying the methods to match the operating procedures for that chip.
 
