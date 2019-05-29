@@ -18,11 +18,13 @@ void write_external_ram(uint8_t* data, uint32_t address, int bytes)
 
 }
 
+//modify read mode - sequential (default), page, or byte
 void read_mode(uint8_t rm)
 {
 
 }
 
+//modify write mode - sequential (default), page, or byte
 void write_mode(uint8_t wm)
 {
 
