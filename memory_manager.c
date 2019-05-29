@@ -1,10 +1,3 @@
-/*
- * memory_manager.c
- *
- *  Created on: May 22, 2019
- *      Author: nxf45901
- */
-
 #include "memory_manager.h"
 
 //read data
