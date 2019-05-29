@@ -1,10 +1,3 @@
-/*
- * memory_manager.h
- *
- *  Created on: May 22, 2019
- *      Author: nxf45901
- */
-
 #ifndef MEMORY_MANAGER_H_
 #define MEMORY_MANAGER_H_
 
