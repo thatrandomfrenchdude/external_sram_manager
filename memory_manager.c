@@ -1,9 +1,14 @@
 #include "memory_manager.h"
 
-//initialize SRAM
-void init_sram(int num_modules, int num_mb)
-{
+/*
+ *  Memory module is 256K bytes x 8 bits w/addresses stored as 24 bits
+ */
 
+//initialize SRAM
+int init_sram(int num_modules)
+{
+    int bytes_per_mod = 256000; //this is specific to this chip
+    return num_modules*bytes_per_mod;
 }
 
 //read data

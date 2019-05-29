@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#define READ_COMMAND 0x03 			//0000 0011
+#define READ_COMMAND 0x03           //0000 0011
 #define WRITE_COMMAND 0x02 			//0000 0010
 
 #define READ_MODE_DEFAULT 0x05 		//0000 0101
@@ -14,9 +14,13 @@
 #define WRITE_MODE_PAGE 0x02		//0000 0010
 #define WRITE_MODE_BYTE 0x00		//0000 0000
 
-uint8_t curr_addr;
+extern uint32_t mem_addr;
+extern int total_mem;
+//include the following lines in main.c, replacing num_modules with a value:
+//uint32_t mem_addr = 0;
+//int total_mem = init_sram(/*num_modules*/);
 
-void init_sram(int num_modules, int num_mb);
+int init_sram(int num_modules);
 void read_external_ram(uint8_t* data, uint32_t address, int bytes);
 void write_external_ram(uint8_t* data, uint32_t address, int bytes);
 void read_mode(uint8_t rm);
