@@ -1,18 +1,22 @@
 #ifndef MEMORY_MANAGER_H_
 #define MEMORY_MANAGER_H_
 
-#include <stdint.h>
+/* Remove this comment if coding in traditional embedded C/C++.
+ * the stdint library is included in the Arduino toolchain. */
+/* #include <stdint.h> */
+/* Comment this #inlcude if coding in traditional embedded C/C++ */
+#include <SPI.h>
 
 #define READ_COMMAND 0x03           //0000 0011
 #define WRITE_COMMAND 0x02          //0000 0010
 
-#define READ_MODE_DEFAULT 0x05 		//0000 0101
-#define READ_MODE_PAGE 0x06 		//0000 0110
-#define READ_MODE_BYTE 0x04 		//0000 0100
+#define READ_MODE_DEFAULT 0x05      //0000 0101
+#define READ_MODE_PAGE 0x06         //0000 0110
+#define READ_MODE_BYTE 0x04         //0000 0100
 
-#define WRITE_MODE_DEFAULT 0x01 	//0000 0001
-#define WRITE_MODE_PAGE 0x02		//0000 0010
-#define WRITE_MODE_BYTE 0x00		//0000 0000
+#define WRITE_MODE_DEFAULT 0x01     //0000 0001
+#define WRITE_MODE_PAGE 0x02        //0000 0010
+#define WRITE_MODE_BYTE 0x00        //0000 0000
 
 extern uint32_t mem_addr;
 extern int total_mem;
