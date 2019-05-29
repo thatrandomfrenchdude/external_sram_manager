@@ -1,9 +1,13 @@
 # SPI-based External SRAM Memory Manager
 
 ## Description
-This code maps and handles memory on external SRAM chips. This memory manager is limited only to the number of chip selects available on the SPI master and the size of the memory on each chip. The project-specific configuration can be customized using the initialization method.
+This code maps and handles memory on external SRAM chips. This memory manager is limited only to the number of chip selects available on the SPI master and the size of the memory on each chip. The project-specific configuration can be customized using the initialization method.  
 
 ## Hardware
+# MCU
+The functions are written for use with a Teensy board being programmed using Platformio or Teensyduino. The functions can be modified for use with traditional embedded C/C++ by modifying the SPI function calls. Current pins are mapped to a Teensy 3.2.
+
+# SRAM Modules
 This code is specifically written for the following chips:
   - IS62/65WVS2568GALL
   - IS62/65WVS2568GBLL 
