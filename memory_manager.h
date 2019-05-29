@@ -14,7 +14,12 @@
 #define WRITE_MODE_PAGE 0x02		//0000 0010
 #define WRITE_MODE_BYTE 0x00		//0000 0000
 
-//data on external SRAM is organized 256K bytes x 8 bits
-uint8_t memory_pointer;
+uint8_t curr_addr;
+
+void init_sram(int num_modules, int num_mb);
+void read_external_ram(uint8_t* data, uint32_t address, int bytes);
+void write_external_ram(uint8_t* data, uint32_t address, int bytes);
+void read_mode(uint8_t rm);
+void write_mode(uint8_t wm);
 
 #endif /* MEMORY_MANAGER_H_ */
