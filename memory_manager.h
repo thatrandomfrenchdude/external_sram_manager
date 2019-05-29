@@ -30,7 +30,7 @@ extern int total_mem;
 //int total_mem = init_sram(/*num_modules*/);
 
 int init_sram(int num_modules);
-void read_external_ram(uint8_t* data, uint32_t address, int bytes);
+void read_external_ram(uint32_t address, int bytes);
 void write_external_ram(uint8_t* data, uint32_t address, int bytes);
 void read_mode(uint8_t rm);
 void write_mode(uint8_t wm);

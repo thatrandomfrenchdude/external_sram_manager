@@ -21,7 +21,7 @@ int init_sram(int num_modules)
 }
 
 //read data
-void read_external_ram(uint8_t* data, uint32_t address, int bytes)
+void read_external_ram(uint32_t address, int bytes)
 {
     int i;
 
