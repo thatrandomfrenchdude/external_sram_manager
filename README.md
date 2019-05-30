@@ -1,7 +1,7 @@
 # SPI-based External SRAM Memory Manager
 
 ## Description
-This code maps and handles memory on external SRAM chips. This memory manager is limited only to the number of chip selects available on the SPI master and the size of the memory on each chip. The project-specific configuration can be customized using the initialization method.  
+This code maps and handles memory on external SRAM chips. This memory manager is limited to the number of chip selects available on the SPI master and the amount of memory on each chip. The project-specific memory configuration can be customized using the initialization method.  
 
 ## Hardware
 ### MCU
