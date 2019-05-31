@@ -1,6 +1,6 @@
 # SPI-based External SRAM Memory Manager
 
-##This code is a WORK IN PROGRESS
+## This code is a WORK IN PROGRESS
 Currently there are linker issues with my header file and the Arduino library, so I will most likely transition to a full-fledged embedded C implementation.
 
 ## Description
