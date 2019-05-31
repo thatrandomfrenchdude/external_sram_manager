@@ -1,5 +1,8 @@
 # SPI-based External SRAM Memory Manager
 
+##This code is a WORK IN PROGRESS
+Currently there are linker issues with my header file and the Arduino library, so I will most likely transition to a full-fledged embedded C implementation.
+
 ## Description
 This code maps and handles memory on external SRAM chips. This memory manager is limited to the number of chip selects available on the SPI master and the amount of memory on each chip. The project-specific memory configuration can be customized using the initialization method.  
 
@@ -10,7 +13,7 @@ The functions are written for use with a Teensy board being programmed using Pla
 ### SRAM Modules
 This code is specifically written for the following chips:
   - IS62/65WVS2568GALL
-  - IS62/65WVS2568GBLL 
+  - IS62/65WVS2568GBLL
 
 It should support other ISSI SPI-based ram as well as other SPI-based external SRAM chips provided that they operate in a similar manner. If this code does not work for a chip, it is possible to make it work by modifying the methods to match the operating procedures for that chip.
 

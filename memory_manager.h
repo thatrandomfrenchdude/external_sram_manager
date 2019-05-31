@@ -8,7 +8,7 @@
 
 /* Comment this #inlcude if coding in traditional embedded C/C++ */
 #include "Arduino.h"
-#include <SPI.h>
+//#include <SPI.h>
 
 //defines for SRAM
 #define READ_COMMAND        0x03    //0000 0011
