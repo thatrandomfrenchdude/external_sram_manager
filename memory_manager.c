@@ -25,7 +25,8 @@ void read_external_ram(uint32_t address, int bytes)
 {
     int i;
 
-    //prep data
+    //prep address to be sent
+    //may need to be sent separately from the command, unclear in documentation
     uint8_t t1 = address >> 16;
     uint8_t t2 = address >> 8;
     uint8_t t3 = address;
